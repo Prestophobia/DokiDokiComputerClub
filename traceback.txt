@@ -1,0 +1,85 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/scripts/splash.rpy", line 231, in script
+    menu:
+Exception: Could not find font u'gui/font/Aller_Rg.ttf'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/scripts/splash.rpy", line 231, in script
+    menu:
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\ast.py", line 1459, in execute
+    choice = renpy.exports.menu(choices, self.set)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\exports.py", line 847, in menu
+    rv = renpy.store.menu(items)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\exports.py", line 1033, in display_menu
+    rv = renpy.ui.interact(mouse='menu', type=type, roll_forward=roll_forward)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\ui.py", line 285, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\core.py", line 2526, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\core.py", line 2883, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\core.py", line 1955, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 427, in renpy.display.render.render_screen (gen\renpy.display.render.c:6806)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\screen.py", line 623, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\display\layout.py", line 1081, in render
+    st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\text\text.py", line 1733, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\text\text.py", line 574, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\text\text.py", line 236, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\text\font.py", line 648, in get_font
+    face = load_face(fn)
+  File "C:\Program Files (x86)\Steam\steamapps\common\Doki Doki Literature Club\Doki Doki Computer Club\renpy\text\font.py", line 590, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font u'gui/font/Aller_Rg.ttf'.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.12.4.2187
+Doki Doki Literature Club! 1.1.0
